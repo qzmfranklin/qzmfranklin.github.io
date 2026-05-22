@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" data-beasties-container>
+    <head>
+        <meta charset="utf-8">
+        <title>Zhongming Qu — Self-Built Systems</title>
+        <base href="/">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Zhongming Qu builds developer productivity systems, AI-native workflows, monorepos, Bazel infrastructure, reproducible sandboxes, and inference platforms.">
+        <meta name="theme-color" content="#FCFCFD">
+        <script>
+            (function () {
+                var t = localStorage.getItem("me-theme");
+                var dark =
+                    t === "dark" ||
+                    (t !== "light" &&
+                        matchMedia("(prefers-color-scheme: dark)").matches);
+                document.documentElement.classList.add(dark ? "dark" : "light");
+                var meta = document.querySelector('meta[name="theme-color"]');
+                if (meta)
+                    meta.setAttribute("content", dark ? "#08080A" : "#FCFCFD");
+                var q = location.search;
+                if (q && q.charAt(1) === "/") {
+                    history.replaceState(null, "", q.slice(1) + location.hash);
+                }
+            })();
+        </script>
+    <style>:root{--text-primary:var(--n50);--text-secondary:var(--n200);--text-tertiary:var(--n300);--text-brand:var(--brand-primary);--font-mono:"SF Mono", "Cascadia Code", ui-monospace, "DejaVu Sans Mono", monospace;--fs-display:48px;--fs-title1:32px;--fs-title2:24px;--fs-headline:16px;--fs-body:14px;--fs-caption:13px;--fs-micro:12px;--sp-xxs:4px;--sp-xs:8px;--sp-sm:12px;--sp-md:16px;--sp-lg:24px;--sp-xl:32px;--sp-xxl:48px;--sp-xxxl:64px;--opacity-hover:.08;--opacity-pressed:.12;--opacity-subtle:.094;--opacity-medium:.25;--opacity-frost:.85}*,*:before,*:after{box-sizing:border-box;margin:0;padding:0}html{font-family:var(--font-mono);font-size:var(--fs-body);line-height:1.6;color:var(--text-primary);background-color:var(--surface-bg);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}body{min-height:100dvh;display:flex;flex-direction:column}</style><link rel="stylesheet" href="styles-KEVWCBXZ.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-KEVWCBXZ.css"></noscript></head>
+    <body>
+        <me-root></me-root>
+    <link rel="modulepreload" href="chunk-QWTZ3TBZ.js"><link rel="modulepreload" href="chunk-GZ7UTLGB.js"><script src="polyfills-5CFQRCPP.js" type="module"></script><script src="main-VKRTN2S5.js" type="module"></script></body>
+</html>
